@@ -132,7 +132,7 @@ int main(int argc, char* argv[]){
             race_vehicles.at(winners_index[i])->display();
             race_vehicles.at(winners_index[i])->honkHorn();
         }
-
+    //need to add delete to vehicle class
     //delete the pointers using deconstructors
     for(int i = 0; i < race_vehicles.size(); i++){
         v = race_vehicles[i];
