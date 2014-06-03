@@ -17,8 +17,8 @@ Vehicle::Vehicle(string new_name, char new_symbol, float new_speed, int new_flat
 Vehicle::~Vehicle(){
     // destructor. this should free up the memory that was allocated for each of the wheels.
     while(wheels.size() != 0){
-        wheels[] delete;
-       // wheels.pop_back();  // BB -1 this doesn't free up the memory.
+       // wheels[].delete;
+       wheels.pop_back();  // BB -1 this doesn't free up the memory.
     }
 }
 
